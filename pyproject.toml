@@ -57,7 +57,7 @@ download = [
 # only distributed in Debian (not pip).
 # only needed to speedup apt parsing
 apt = [
-    "python3-apt>=2.6.0",
+    "python-apt>=2.6.0",
 ]
 
 # dependencies to build documentation
@@ -90,3 +90,7 @@ filterwarnings = [
 source = [
   "debsbom"
 ]
+
+[tool.uv.sources]
+python-debian = { git = "https://salsa.debian.org/python-debian-team/python-debian" }
+python-apt = { git = "https://salsa.debian.org/apt-team/python-apt" }
